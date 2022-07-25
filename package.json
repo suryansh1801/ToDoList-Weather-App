@@ -1,0 +1,31 @@
+{
+  "name": "todolist-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "14.18.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.18.3",
+    "dotenv": "^16.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.21",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.13.14",
+    "mongosh": "^1.5.0",
+    "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.19"
+  }
+}

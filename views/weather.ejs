@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <div class="weather-container">
+    <div class="weather-content">
+      <h2>
+        Weather Report
+        <br>
+        
+      </h2>
+      <span class="weather">
+        <%= weather.location.country %>
+        <br>
+        <%= weather.location.name %>
+        <br>
+        <%= weather.current.temperature %>&deg;C
+      <br>
+      <%= weather.current.weather_descriptions[0] %></span>
+    </div>
+  </div>
+</html>
