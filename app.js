@@ -91,10 +91,13 @@ app.get("/", async function (req, res) {
     } else {
       //res.render("list",{listTitle: "Today", weather:weatherD});
 
+    try {
       const weatherKey = process.env.WEATHER_KEY
       const locKey = process.env.LOCATION_KEY
 
-      const ip = process.env.NODE_ENV === "development" ? "45.127.199.132" : req.ip
+      const ip = process.env.NODE_ENV === "development" ? "45.127.199.132" : "45.127.199.132"
+
+      console.log(req.ip);
 
       const LOCATION_FETCH_URL = encodeURI(`http://api.ipstack.com/${ip}?access_key=${locKey}`)
 
@@ -111,7 +114,10 @@ app.get("/", async function (req, res) {
       console.log(LOCATION_FETCH_URL, WEATHER_FETCH_URL);
       console.log(weather);
       
-      res.render("list", { listTitle: "Today", newListItems: foundItems, weather: weather });
+      res.render("list", { listTitle: "Today", newListItems: foundItems, weather: weather })
+    } catch (error) {
+      console.log(error);
+    };
     }
   });
 
