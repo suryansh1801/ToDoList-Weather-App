@@ -8,6 +8,7 @@ const app = express();
 import axios from "axios"
 
 app.set('view engine', 'ejs');
+app.set("trust proxy", 1)
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
