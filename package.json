@@ -21,7 +21,6 @@
     "lodash": "^4.17.21",
     "mongo": "^0.1.0",
     "mongoose": "^5.13.14",
-    "mongosh": "^1.5.0",
     "node-fetch": "^3.2.6"
   },
   "devDependencies": {
