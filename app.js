@@ -96,7 +96,7 @@ app.get("/", async function (req, res) {
       const weatherKey = process.env.WEATHER_KEY
       const locKey = process.env.LOCATION_KEY
 
-      const ip = process.env.NODE_ENV === "development" ? "45.127.199.132" : "45.127.199.132"
+      const ip = process.env.NODE_ENV === "development" ? "45.127.199.132" : req.ip
 
       console.log(req.ip);
 
