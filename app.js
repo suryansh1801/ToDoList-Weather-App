@@ -92,36 +92,6 @@ app.get("/", async function (req, res) {
 
 });
 
-// app.get("/:customListName", function(req, res){
-//   const customListName = _.capitalize(req.params.customListName);
-
-//   List.findOne({name: customListName}, function(err, foundList){
-//     if (!err){
-//       if (!foundList){
-//         //Create a new list
-//         const list = new List({
-//           name: customListName,
-//           items: defaultItems
-//         });
-//         list.save();
-//         res.redirect("/" + customListName);
-//       } else {
-//         //Show an existing list
-
-//       //  const weather = {
-//       //     location: {
-//       //       name: "Nagpur"
-//       //     }
-//       //   }
-
-//       const weather = "nagpur"
-
-//         res.render("list", {listTitle: "lol", newListItems: foundList.items, weather: "nagpur"});
-//       }
-//     }
-//   });
-// });
-
 
 
 app.post("/", function (req, res) {
@@ -179,5 +149,4 @@ app.listen(port, function () {
   console.log("Server started successfully");
 });
 
-// http://api.ipstack.com/2405:201:600d:d1ee:6422:a8cb:ca19:4956?access_key=47e089d0232e8937beb76512b242acbe
-//39a6b677615a4d460be030bb64ed8092 weatherstack API key
+
