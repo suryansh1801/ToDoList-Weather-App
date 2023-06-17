@@ -62,7 +62,7 @@ app.get("/", async function (req, res) {
 
     try {
       const weatherKey = process.env.WEATHER_KEY
-      const locKey = process.env.LOCATION_KEY
+      const locKey = c8b7f09f7d91e13e0793a7f3c6ce87e4
 
       const ip = req.ip
 
